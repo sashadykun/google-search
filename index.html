@@ -3,6 +3,11 @@
     <head>
         <title>Search</title>
     </head>
+    <script>
+        function clickAlert() {
+            alert("Functionality are not developed!");
+        }
+    </script>
     <style>
 
         body {
@@ -48,7 +53,7 @@
         }
 
         .googleImage {
-            margin-top: 155px;
+            margin-top: 125px;
             height: 92px;
             margin-bottom: 20px;
 
@@ -102,6 +107,10 @@
             margin-top: 89px;
 
         }
+
+        .buttonsContainer {
+            margin: 20px;
+        }
        
     </style>
     <body>
@@ -125,15 +134,19 @@
                                         <img class="searchImage"  src="./search_img.png" alt="">
                                     </div>
                                     <input class="searchInput" type="text" name="q">
-                                    <div class="mic">
+                                    <div class="mic" onclick="clickAlert()"">
                                         <img class="micImg" src="./mic.png" alt="">
                                     </div>
                                 </div>
                                 
                                 
                             </div>
+                            <div class="buttonsContainer"> 
+                                <input type="submit" value="Google Search">
+                                <input type="submit" value="I'm Feeling Lucky">
+                            </div>
                             
-                            <input type="submit" value="Google Search">
+                            
                         </form>
                     </div>
                 </center>
