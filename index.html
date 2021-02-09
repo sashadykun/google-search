@@ -66,17 +66,17 @@
             padding-right: 13px;
         }
 
-    .mic {
-        flex: 1 0 auto;
-        display: flex;
-        cursor: pointer;
-        align-items: center;
-        border: 0;
-        outline: none;
-        padding: 0 8px;
-        width: 24px;
-        line-height: 44px;
-    }
+        .mic {
+            flex: 1 0 auto;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            border: 0;
+            outline: none;
+            padding: 0 8px;
+            width: 24px;
+            line-height: 44px;
+        }
         
         .searchLine {
             flex: 1;
@@ -86,10 +86,9 @@
         }
 
         .searchImage {
-            /* margin-left: 10px; */
             display: flex;
-            height: 15px;
-            /* margin-top: 12px; */
+            height: 13px;
+            margin-bottom: 3px;
             
         }
 
@@ -106,6 +105,23 @@
         .central_box {
             margin-top: 89px;
 
+        }
+
+        .submitButton {
+            /* background-color: #f8f9fa; */
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            /* font-family: arial,sans-serif; */
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
         }
 
         .buttonsContainer {
@@ -131,9 +147,10 @@
                             <div class="searchContainer">
                                 <div class="searchLine">
                                     <div class="searchSymbolBox">
-                                        <img class="searchImage"  src="./search_img.png" alt="">
+                                        <!-- &#128269 -->
+                                        <img class="searchImage"  src="./search-img.png" alt="">
                                     </div>
-                                    <input class="searchInput" type="text" name="q">
+                                    <input class="searchInput" type="text" name="q" autofocus>
                                     <div class="mic" onclick="clickAlert()"">
                                         <img class="micImg" src="./mic.png" alt="">
                                     </div>
@@ -142,8 +159,8 @@
                                 
                             </div>
                             <div class="buttonsContainer"> 
-                                <input type="submit" value="Google Search">
-                                <input type="submit" value="I'm Feeling Lucky">
+                                <input class="submitButton" type="submit" value="Google Search">
+                                <input class="submitButton" type="submit" value="I'm Feeling Lucky">
                             </div>
                             
                             
