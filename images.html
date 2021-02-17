@@ -9,19 +9,37 @@
             alert("Sorry, this Functionality under development!");
         }
     </script>
+    <style>
+
+        .logo-subtext {
+            color: #4285f4;
+            font: 16px/16px roboto-regular, arial, sans-serif;
+            left: 105px;
+            position: relative;
+            top: -25px;
+            white-space: nowrap;
+        }
+    </style>
     
     <body>
         <div class="content">
             <div class="links_box">
                 <div class="nav_links">
-                    <a href="images.html">Image Search</a>
-                    <a href="advanced.html">Advanced Search</a>
+                    <a href="index.html">Google Search</a>
                 </div>
             </div>
             
             <div class="central_box">
                 <center>
-                    <img class="googleImage" src="./google-png.png" alt="google-png">
+                    
+                    <div class="imageContainer">
+                        <img class="googleImage" src="./google-png.png" alt="google-png">
+                        <div>
+                            <span class="logo-subtext">Images</span>
+                        </div>
+                    </div>
+                    
+                    
                     <div class="search">
                         
                         <form  action="https://google.com/search">
@@ -38,11 +56,6 @@
                                 
                                 
                             </div>
-                            <div class="buttonsContainer"> 
-                                <input class="submitButton" type="submit" value="Google Search">
-                                <input class="submitButton" name="btnI" type="submit" value="I'm Feeling Lucky">
-                            </div>
-                            
                             
                         </form>
                     </div>
