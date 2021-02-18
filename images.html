@@ -19,6 +19,25 @@
             top: -25px;
             white-space: nowrap;
         }
+
+        .searchButton {
+            flex: 0 0 auto;
+            padding-right: 13px;
+            height: 44px;
+            width: 44px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            flex: 0 0 auto;
+            padding: 0;
+        }
+
+        .loupe {
+            background: none;
+            height: 24px;
+            width: 24px;
+            margin: 0 0 4px;
+        }
     </style>
     
     <body>
@@ -42,16 +61,23 @@
                     
                     <div class="search">
                         
-                        <form  action="https://google.com/search">
+                        <form  action="httpS://images.google.com/images">
                             <div class="searchContainer">
                                 <div class="searchLine">
                                     <div class="searchSymbolBox">
-                                        <img class="searchImage"  src="./search-img.png" alt="">
+                                        <img class="searchImage"  src="loupegrey.svg" alt="">
                                     </div>
                                     <input class="searchInput" type="text" name="q" autofocus>
-                                    <div class="mic" onclick="clickAlert()"">
-                                        <img class="micImg" src="./mic.png" alt="">
+                                    <div class="mic">
+                                        <img class="camImg" src="camera.png" alt="camera">
                                     </div>
+                                    <div class="mic" onclick="clickAlert()"">
+                                        <img class="micImg" src="./mic.png" alt="mic">
+                                    </div>
+                                    <button class="searchButton" type="submit" lable="Google Image Search">
+                                        <img class="loupe" src="loupe.svg" alt="">
+                                    </button>
+                                    
                                 </div>
                                 
                                 
