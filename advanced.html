@@ -17,7 +17,14 @@
             margin: 25px 35px;
         }
 
-       
+        .formContainer {
+            max-width: 1140px;
+            min-width: 200px;
+            width: 96%;
+            margin: 40px 2% 0 45px;
+        }
+
+        /* https://www.google.com/search?as_q=vvvv&as_epq=kkk&as_oq=ppp&as_eq=jjj */
     </style>
     
     <body>
@@ -30,6 +37,33 @@
         </div>
         <div class="labelContainer">
             <label style="margin-left: 10px;">Advanced Search</label>
+        </div>
+        
+        <div class="formContainer">
+
+            <form  action="https://google.com/advanced_search">
+                <div>Find pages with...</div>
+                <div class="">
+                    <div class="searchLine">
+                        <div class="searchSymbolBox">
+                            <img class="searchImage"  src="loupegrey.svg" alt="">
+                        </div>
+                        <input class="searchInput" type="text" name="q" autofocus>
+                        <div class="mic" onclick="clickAlert()"">
+                            <img class="micImg" src="./mic.png" alt="">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="buttonsContainer"> 
+                    <input class="submitButton" type="submit" value="Google Search">
+                    <input class="submitButton" name="btnI" type="submit" value="I'm Feeling Lucky">
+                </div>
+                
+                
+            </form>
+
         </div>
         
         
