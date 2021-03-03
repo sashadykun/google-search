@@ -24,6 +24,10 @@
             margin: 40px 2% 0 45px;
         }
 
+        .separate-line {
+            border-bottom: 1px solid #ebebeb;
+        }
+
         /* https://www.google.com/search?as_q=vvvv&as_epq=kkk&as_oq=ppp&as_eq=jjj */
     </style>
     
@@ -37,28 +41,50 @@
         </div>
         <div class="labelContainer">
             <label style="margin-left: 10px;">Advanced Search</label>
+            
         </div>
+        <div class="separate-line"></div>
         
         <div class="formContainer">
 
             <form  action="https://google.com/advanced_search">
                 <div>Find pages with...</div>
-                <div class="">
-                    <div class="searchLine">
-                        <div class="searchSymbolBox">
-                            <img class="searchImage"  src="loupegrey.svg" alt="">
-                        </div>
-                        <input class="searchInput" type="text" name="q" autofocus>
-                        <div class="mic" onclick="clickAlert()"">
-                            <img class="micImg" src="./mic.png" alt="">
-                        </div>
-                    </div>
-                    
-                    
-                </div>
+                
+                
+                
+                <table>
+                    <head>
+                        <tr>
+                            <th>Find pages with...</th>
+                            <th></th>
+                            <th>something here</th>
+                        </tr>
+                    </head>
+                    <tbody>
+                        <tr>
+                            <td>all these words:</td>
+                            <td><input type="text"></td>
+                            <td>info about this one</td>
+                        </tr>
+                        <tr>
+                            <td>this exact word or phrase:</td>
+                            <td><input type="text"></td>
+                            <td>info about this one</td>
+                        </tr>
+                        <tr>
+                            <td>any of these words:</td>
+                            <td><input type="text"></td>
+                            <td>info about this one</td>
+                        </tr>
+                        <tr>
+                            <td>none of these words:</td>
+                            <td><input type="text"></td>
+                            <td>info about this one</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <div class="buttonsContainer"> 
-                    <input class="submitButton" type="submit" value="Google Search">
-                    <input class="submitButton" name="btnI" type="submit" value="I'm Feeling Lucky">
+                    <input class="submitButton" type="submit" value="Advanced Search">
                 </div>
                 
                 
